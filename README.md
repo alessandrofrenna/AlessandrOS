@@ -1,6 +1,6 @@
-# AlessandrOs &nbsp; [![build-alessandro-os](https://github.com/alessandrofrenna/AlessandrOS/actions/workflows/build.yml/badge.svg)](https://github.com/alessandrofrenna/AlessandrOS/actions/workflows/build.yml)
+# ThanatOS &nbsp; [![build-thanatos](https://github.com/alessandrofrenna/AlessandrOS/actions/workflows/build.yml/badge.svg)](https://github.com/alessandrofrenna/AlessandrOS/actions/workflows/build.yml)
 
-My custom OStree layer on top of Fedora Silverblue.
+My custom OStree layer on top of Fedora Silverblue and Ublue.
 
 Made with [blue-build/template](https://github.com/blue-build/template)
 
