@@ -72,8 +72,6 @@ modules:
         - org.gnome.Connections
         - org.gnome.Cheese
 
-  - type: yafti
-
   - type: akmods
     install:
       - v4l2loopback
