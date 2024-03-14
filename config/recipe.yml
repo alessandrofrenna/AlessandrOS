@@ -24,7 +24,7 @@ modules:
       - firefox
       - firefox-langpacks
       - fedora-bookmarks
-      - power-profile-daemon
+      - power-profiles-daemon
 
   - type: default-flatpaks
     notify: true
