@@ -21,6 +21,14 @@ modules:
       - podman-docker
       - fprintd
       - xorg-x11-server-Xwayland
+      - btop
+      # Tuned to replace power-profiles-daemon
+      - tuned
+      - tuned-ppd
+      - tuned-utils
+      - tuned-gtk
+      - tuned-profiles-atomic
+      - tuned-profiles-cpu-partitioning
     remove:
       - firefox
       - firefox-langpacks
@@ -50,5 +58,10 @@ modules:
     install:
       - gnome-mutter-patched
       - dconf-update-service
+
+  - type: systemd
+    system:
+      enabled:
+        - tuned.service
 
   - type: signing
