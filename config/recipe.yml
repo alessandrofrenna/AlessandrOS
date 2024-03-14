@@ -1,4 +1,4 @@
-name: AlessandrOS
+name: alessandro-os
 description: This is my personal OS image.
 
 base-image: ghcr.io/ublue-os/silverblue-main
