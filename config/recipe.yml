@@ -18,6 +18,7 @@ modules:
     repos:
       - https://copr.fedorainfracloud.org/coprs/kylegospo/system76-scheduler/repo/fedora-%OS_VERSION%/kylegospo-system76-scheduler-fedora-%OS_VERSION%.repo
     install:
+      - neofetch
       - podman-docker
       - fprintd
       - xorg-x11-server-Xwayland
