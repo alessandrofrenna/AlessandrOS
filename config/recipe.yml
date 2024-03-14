@@ -20,6 +20,7 @@ modules:
     install:
       - podman-docker
       - fprintd
+      - xorg-x11-server-Xwayland
     remove:
       - firefox
       - firefox-langpacks
@@ -47,7 +48,7 @@ modules:
 
   - type: bling
     install:
-      - gnome-vrr
+      - gnome-mutter-patched
       - dconf-update-service
 
   - type: signing
