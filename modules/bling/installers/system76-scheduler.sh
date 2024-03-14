@@ -7,6 +7,4 @@ wget -O "/etc/yum.repos.d/_copr_kylegospo-system76-scheduler.repo" "https://copr
 
 rpm-ostree install system76-scheduler
 
-systemctl enable --now com.system76.Scheduler.service
-
 rm -f /etc/yum.repos.d/_copr_kylegospo-system76-scheduler.repo

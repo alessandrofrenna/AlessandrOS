@@ -64,5 +64,6 @@ modules:
     system:
       enabled:
         - tuned.service
+        - com.system76.Scheduler.service
 
   - type: signing
