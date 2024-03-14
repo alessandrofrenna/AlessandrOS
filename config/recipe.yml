@@ -39,4 +39,16 @@ modules:
       remove:
       # - org.gnome.eog
 
+  - type: systemd
+    system:
+      disabled:
+        - power-profiles-daemon.service
+      masked:
+        - power-profiles-daemon.service
+
+  - type: akmods
+    install:
+      - ublue-os-akmods-addons
+      - v4l2loopback
+
   - type: signing
