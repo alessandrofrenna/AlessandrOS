@@ -1,4 +1,4 @@
-# ThanatOS &nbsp; [![build-thanatos](https://github.com/alessandrofrenna/AlessandrOS/actions/workflows/build.yml/badge.svg)](https://github.com/alessandrofrenna/AlessandrOS/actions/workflows/build.yml)
+# ThanatOS &nbsp; [![build-thanatos](https://github.com/alessandrofrenna/ThanatOS/actions/workflows/build.yml/badge.svg)](https://github.com/alessandrofrenna/ThanatOS/actions/workflows/build.yml)
 
 My custom OStree layer on top of Fedora Silverblue and Ublue.
 
@@ -10,7 +10,7 @@ To rebase an existing atomic Fedora installation to the latest build:
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/alessandrofrenna/alessandro-os:latest
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/alessandrofrenna/thanatos:latest
   ```
 - Reboot to complete the rebase:
   ```
@@ -18,7 +18,7 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
 - Then rebase to the signed image, like so:
   ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/alessandrofrenna/alessandro-os:latest
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/alessandrofrenna/thanatos:latest
   ```
 - Reboot again to complete the installation
   ```
@@ -32,5 +32,5 @@ The `latest` tag will automatically point to the latest build. That build will s
 These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
 
 ```bash
-cosign verify --key cosign.pub ghcr.io/alessandrofrenna/alessandro-os
+cosign verify --key cosign.pub ghcr.io/alessandrofrenna/thanatos
 ```
