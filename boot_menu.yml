@@ -1,5 +1,5 @@
 ublue_variants:
-  - label: AlessandrOS
+  - label: alessandrofrenna/thanatos
     ks: /kickstart/ublue-os.ks
     flavors:
-      - label: AlessandrOS
+      - label: ThanathOS

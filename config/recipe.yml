@@ -1,5 +1,5 @@
-name: alessandro-os
-description: This is my personal OS image.
+name: thanatos
+description: OSTree layer on top of ublue-silverblue-main
 
 base-image: ghcr.io/ublue-os/silverblue-main
 image-version: latest
@@ -18,23 +18,19 @@ modules:
     repos:
       # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
     install:
-      # - micro
-      # - starship
+      - podman-docker
     remove:
-      # example: removing firefox (in favor of the flatpak)
-      # "firefox" is the main package, "firefox-langpacks" is a dependency
-      # - firefox
-      # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+      - firefox
+      - firefox-langpacks
+      - fedora-bookmarks
 
   - type: default-flatpaks
-    notify: true # Send notification after install/uninstall is finished (true/false)
+    notify: true
     system:
-      # If no repo information is specified, Flathub will be used by default
-      # repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-      # repo-name: flathub
-      # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
+      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      repo-name: flathub
       install:
-        # - org.mozilla.firefox
+        - org.mozilla.firefox
         # - org.gnome.Loupe
         # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
       # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),
@@ -43,5 +39,4 @@ modules:
       remove:
       # - org.gnome.eog
 
-  - type: signing # this sets up the proper policy & signing files for signed images to work fully
-
+  - type: signing
