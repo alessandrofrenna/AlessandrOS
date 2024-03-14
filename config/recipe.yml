@@ -48,21 +48,19 @@ modules:
   - type: default-flatpaks
     notify: true
     system:
-      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-      repo-name: flathub
       install:
-        - io.github.realmazharhussain.GdmSettings
-        - com.mattjakeman.ExtensionManager
-        - com.github.tchx84.Flatseal
-        - io.github.flattool.Warehouse
-        - it.mijorus.gearlever
-        - io.github.dvlv.boxbuddyrs
+        # - io.github.realmazharhussain.GdmSettings
+        # - com.mattjakeman.ExtensionManager
+        # - com.github.tchx84.Flatseal
+        # - io.github.flattool.Warehouse
+        # - it.mijorus.gearlever
+        # - io.github.dvlv.boxbuddyrs
         - org.mozilla.firefox
         - org.mozilla.Thunderbird
         - org.gnome.Loupe
         - org.gnome.Snapshot
-        - org.gnome.font-viewer
-        - com.github.wwmm.easyeffects
+        # - org.gnome.font-viewer
+        # - com.github.wwmm.easyeffects
         # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
       remove:
         - org.gnome.Maps
