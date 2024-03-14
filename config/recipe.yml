@@ -41,6 +41,9 @@ modules:
       - fedora-bookmarks
       - power-profiles-daemon
       - htop
+      # Removing gnome applications
+      - gnome-tour
+      - gnome-system-monitor
 
   - type: default-flatpaks
     notify: true
@@ -62,7 +65,12 @@ modules:
         - com.github.wwmm.easyeffects
         # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
       remove:
-        - org.gnome.eog
+        - org.gnome.Maps
+        - org.gnome.Weather
+        - org.gnome.Extensions
+        - org.gnome.Contacts
+        - org.gnome.Connections
+        - org.gnome.Cheese
 
   - type: akmods
     install:
