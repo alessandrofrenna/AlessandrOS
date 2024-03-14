@@ -57,6 +57,7 @@ modules:
   - type: bling
     install:
       - gnome-mutter-patched
+      - system76-scheduler
       - dconf-update-service
 
   - type: systemd
