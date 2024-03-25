@@ -36,22 +36,21 @@ modules:
       - tuned-profiles-cpu-partitioning
       # From COPR
       - system76-scheduler
-    remove:
-      - firefox
-      - firefox-langpacks
-      - fedora-bookmarks
-      - power-profiles-daemon
-      - htop
-      # Removing gnome applications
-      - gnome-tour
-      - gnome-system-monitor
-      # Btop
-      - btop
       # Text editors
       - vim
       - nano
       # Clipboard
       - gpaste
+      # Theming
+      - yaru-theme
+    remove:
+      - firefox
+      - firefox-langpacks
+      - fedora-bookmarks
+      - power-profiles-daemon
+      # Removing gnome applications
+      - gnome-tour
+      - gnome-system-monitor
 
   - type: default-flatpaks
     notify: true
