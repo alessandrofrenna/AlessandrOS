@@ -22,7 +22,7 @@ modules:
       - podman-docker
       - fprintd
       - xorg-x11-server-Xwayland
-      - btop
+      - htop
       - unrar
       - unzip
       - p7zip
@@ -45,6 +45,13 @@ modules:
       # Removing gnome applications
       - gnome-tour
       - gnome-system-monitor
+      # Btop
+      - btop
+      # Text editors
+      - vim
+      - nano
+      # Clipboard
+      - gpaste
 
   - type: default-flatpaks
     notify: true
@@ -62,8 +69,12 @@ modules:
         - org.mozilla.Thunderbird
         - org.gnome.Loupe
         - org.gnome.Snapshot
+        - org.gnome.Evince
+        - org.gnome.TextEditor
         - org.gnome.font-viewer
         - com.github.wwmm.easyeffects
+        - com.github.johnfactotum.Foliate
+        - com.github.liferooter.textpieces
       remove:
         - org.gnome.Maps
         - org.gnome.Weather
