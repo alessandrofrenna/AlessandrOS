@@ -43,6 +43,8 @@ modules:
       - gpaste
       # Theming
       - yaru-theme
+      - kvantum
+      - sassc
     remove:
       - firefox
       - firefox-langpacks
