@@ -2,6 +2,6 @@ type: script
 scripts:
   - reload-font-cache.sh
   - system76-scheduler.sh
-  # - gnome-mutter-patched.sh
-  - remove-extras.sh
+  - gnome-mutter-patched.sh
   - disable-cups.sh
+  - extras.sh
