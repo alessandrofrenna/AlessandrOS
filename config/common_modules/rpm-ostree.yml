@@ -25,7 +25,7 @@ install:
   # Containers
   - podman-docker
   - podman-compose
-  - podman-plugins
+  # - podman-plugins Missing for latest fedora
   - podman-tui
   - podmansh
   # Tuned to replace power-profiles-daemon
