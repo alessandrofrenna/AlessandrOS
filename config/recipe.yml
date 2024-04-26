@@ -16,22 +16,46 @@ modules:
       repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
       repo-name: flathub
       install:
+        # Gnome applications
+        - org.gnome.Calculator
+        - org.gnome.Calendar
+        - org.gnome.Snapshot
+        - org.gnome.Loupe
+        - org.gnome.Evince
+        - org.gnome.TextEditor
+        - org.gnome.font-viewer
+        - org.gnome.Firmware
+        - org.gnome.Firmware
+        # Applications
+        - info.febvre.Komikku
+        - com.github.johnfactotum.Foliate
+        - com.github.liferooter.textpieces
+        - de.haeckerfelix.Fragments
+        - app.drey.Dialect
+        # - org.telegram.desktop
+        - com.spotify.Client
+        - com.github.rafostar.Clapper
+        - com.github.neithern.g4music
+        # Web browsers
+        - io.github.ungoogled_software.ungoogled_chromium
+        - org.mozilla.firefox
+        - org.gnome.Epiphany
+        # Email client
+        - org.mozilla.Thunderbird
+        # Tools and extensions
         - io.github.realmazharhussain.GdmSettings
         - com.mattjakeman.ExtensionManager
+        - com.github.wwmm.easyeffects
+        - com.github.GradienceTeam.Gradience
+        - ca.desrt.dconf-editor
+        - io.gitlab.adhami3310.Impression
+        - io.github.fabrialberio.pinapp
+        # Flatpaks(app, permisison)/AppImages/Distroboxes/Toolboxes tools
         - com.github.tchx84.Flatseal
         - io.github.flattool.Warehouse
         - it.mijorus.gearlever
         - io.github.dvlv.boxbuddyrs
-        - org.mozilla.firefox
-        - org.mozilla.Thunderbird
-        - org.gnome.Loupe
-        - org.gnome.Snapshot
-        - org.gnome.Evince
-        - org.gnome.TextEditor
-        - org.gnome.font-viewer
-        - com.github.wwmm.easyeffects
-        - com.github.johnfactotum.Foliate
-        - com.github.liferooter.textpieces
+        - com.github.marhkb.Pods
       remove:
         - org.gnome.Maps
         - org.gnome.Weather
