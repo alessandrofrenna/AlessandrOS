@@ -5,4 +5,3 @@ scripts:
   - gnome-mutter-patched.sh
   - remove-gnome-extensions.sh
   - disable-cups.sh
-  - xwayland-video-bridge-setup.sh

@@ -10,6 +10,7 @@ install:
   - neofetch
   - btop
   - xorg-x11-server-Xwayland
+  - xwaylandvideobridge
   - fprintd
   - python3-pip
   - gcc
