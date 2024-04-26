@@ -4,97 +4,13 @@ description: OSTree layer on top of ublue-silverblue-main
 base-image: ghcr.io/ublue-os/silverblue-main
 image-version: latest
 
-# module configuration, executed in order
-# you can include multiple instances of the same module
 modules:
-  - type: files
-    files:
-      - usr:
-          /usr # copies config/files/usr into your image's /usr.
-          # put configuration files you want in /etc/ on a booted system
-          # in /usr/etc/ in the image. read more in files module reference.
-
-  - type: rpm-ostree
-    repos:
-      - https://copr.fedorainfracloud.org/coprs/kylegospo/system76-scheduler/repo/fedora-%OS_VERSION%/kylegospo-system76-scheduler-fedora-%OS_VERSION%.repo
-    install:
-      - neofetch
-      - podman-docker
-      - fprintd
-      - xorg-x11-server-Xwayland
-      - htop
-      - unrar
-      - unzip
-      - p7zip
-      - file-roller
-      # Tuned to replace power-profiles-daemon
-      - tuned
-      - tuned-ppd
-      - tuned-utils
-      - tuned-gtk
-      - tuned-profiles-atomic
-      - tuned-profiles-cpu-partitioning
-      # From COPR
-      - system76-scheduler
-      # Text editors
-      - vim
-      - nano
-      # Clipboard
-      - gpaste
-      # Theming
-      - yaru-theme
-      - kvantum
-      - sassc
-    remove:
-      - firefox
-      - firefox-langpacks
-      - fedora-bookmarks
-      - power-profiles-daemon
-      # Removing gnome applications
-      - gnome-tour
-      - gnome-system-monitor
-
-  - type: default-flatpaks
-    notify: true
-    system:
-      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-      repo-name: flathub
-      install:
-        - io.github.realmazharhussain.GdmSettings
-        - com.mattjakeman.ExtensionManager
-        - com.github.tchx84.Flatseal
-        - io.github.flattool.Warehouse
-        - it.mijorus.gearlever
-        - io.github.dvlv.boxbuddyrs
-        - org.mozilla.firefox
-        - org.mozilla.Thunderbird
-        - org.gnome.Loupe
-        - org.gnome.Snapshot
-        - org.gnome.Evince
-        - org.gnome.TextEditor
-        - org.gnome.font-viewer
-        - com.github.wwmm.easyeffects
-        - com.github.johnfactotum.Foliate
-        - com.github.liferooter.textpieces
-      remove:
-        - org.gnome.Maps
-        - org.gnome.Weather
-        - org.gnome.Extensions
-        - org.gnome.Contacts
-        - org.gnome.Connections
-        - org.gnome.Cheese
-
-  - type: bling
-    install:
-      - gnome-mutter-patched
-      - dconf-update-service
-
-  - type: systemd
-    system:
-      enabled:
-        - tuned.service
-        - com.system76.Scheduler.service
-      disabled:
-        - rpm-ostreed-automatic.timer
-
-  - type: signing
+  - from-file: common_modules/files.yml
+  - from-file: common_modules/xdg-autostart-workaround.yml
+  - from-file: common_modules/rpm-ostree.yml
+  - from-file: common_modules/rpm-ostree-gnome.yml
+  - from-file: common_modules/default-flatpaks.yml
+  - from-file: common_modules/bling.yml
+  - from-file: common_modules/systemd.yml
+  - from-file: common_modules/scripts.yml
+  - from-file: common_modules/signing.yml

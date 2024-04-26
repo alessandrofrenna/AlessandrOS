@@ -1,0 +1,54 @@
+type: rpm-ostree
+repos:
+  - https://copr.fedorainfracloud.org/coprs/kylegospo/system76-scheduler/repo/fedora-%OS_VERSION%/kylegospo-system76-scheduler-fedora-%OS_VERSION%.repo
+install:
+  - rclone
+  - fuse3
+  - fuse-common
+  - fuse3-libs
+  # Utilities
+  - neofetch
+  - btop
+  - xorg-x11-server-Xwayland
+  - fprintd
+  - python3-pip
+  - gcc
+  - curl
+  - wget
+  - youtube-dl
+  # File archive
+  - unrar
+  - unzip
+  - p7zip
+  - p7zip-plugins
+  - file-roller
+  # Containers
+  - podman-docker
+  - podman-compose
+  - podman-plugins
+  - podman-tui
+  - podmansh
+  # Tuned to replace power-profiles-daemon
+  - tuned
+  - tuned-ppd
+  - tuned-utils
+  - tuned-gtk
+  - tuned-profiles-atomic
+  - tuned-profiles-cpu-partitioning
+  # From COPR
+  - system76-scheduler
+  # Text editors
+  - vim
+  - nano
+  - code
+  # Clipboard
+  - gpaste
+  # Theming
+  - yaru-theme
+  - kvantum
+  - sassc
+remove:
+  - firefox
+  - firefox-langpacks
+  - fedora-bookmarks
+  - power-profiles-daemon

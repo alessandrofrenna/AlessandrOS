@@ -1,0 +1,11 @@
+type: systemd
+system:
+  enabled:
+    - minimum-free-zram.service
+    - com.system76.Scheduler.service
+    - tuned.service
+  disabled:
+    - rpm-ostreed-automatic.timer
+user:
+  enabled:
+    - podman.socket
