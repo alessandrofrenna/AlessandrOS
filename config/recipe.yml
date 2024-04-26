@@ -5,11 +5,42 @@ base-image: ghcr.io/ublue-os/silverblue-main
 image-version: latest
 
 modules:
-  - from-file: common_modules/files.yml
   - from-file: common_modules/xdg-autostart-workaround.yml
+  - from-file: common_modules/files.yml
   - from-file: common_modules/rpm-ostree.yml
   - from-file: common_modules/rpm-ostree-gnome.yml
-  - from-file: common_modules/default-flatpaks.yml
+
+  - type: default-flatpaks
+    notify: true
+    system:
+      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      repo-name: flathub
+      install:
+        - io.github.realmazharhussain.GdmSettings
+        - com.mattjakeman.ExtensionManager
+        - com.github.tchx84.Flatseal
+        - io.github.flattool.Warehouse
+        - it.mijorus.gearlever
+        - io.github.dvlv.boxbuddyrs
+        - org.mozilla.firefox
+        - org.mozilla.Thunderbird
+        - org.gnome.Loupe
+        - org.gnome.Snapshot
+        - org.gnome.Evince
+        - org.gnome.TextEditor
+        - org.gnome.font-viewer
+        - com.github.wwmm.easyeffects
+        - com.github.johnfactotum.Foliate
+        - com.github.liferooter.textpieces
+      remove:
+        - org.gnome.Maps
+        - org.gnome.Weather
+        - org.gnome.Extensions
+        - org.gnome.Contacts
+        - org.gnome.Connections
+        - org.gnome.Cheese
+
+  # - from-file: common_modules/default-flatpaks.yml
   - from-file: common_modules/scripts.yml
   - from-file: common_modules/bling.yml
   - from-file: common_modules/systemd.yml
