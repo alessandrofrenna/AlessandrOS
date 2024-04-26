@@ -3,5 +3,5 @@ scripts:
   - reload-font-cache.sh
   - system76-scheduler.sh
   - gnome-mutter-patched.sh
-  - remove-gnome-extensions.sh
+  # - remove-gnome-extensions.sh
   - disable-cups.sh
