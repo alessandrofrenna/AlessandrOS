@@ -2,8 +2,7 @@ type: default-flatpaks
 notify: true
 system:
   repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-  repo-name: flathub-system
-  repo-title: "Flathub (System)"
+  repo-name: flathub
   install:
     # Gnome applications
     - org.gnome.Calculator
@@ -21,7 +20,7 @@ system:
     - com.github.liferooter.textpieces
     - de.haeckerfelix.Fragments
     - app.drey.Dialect
-    # - org.telegram.desktop
+    - org.telegram.desktop
     - com.spotify.Client
     - com.github.rafostar.Clapper
     - com.github.neithern.g4music
@@ -52,7 +51,3 @@ system:
     - org.gnome.Contacts
     - org.gnome.Connections
     - org.gnome.Cheese
-user:
-  repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-  repo-name: flathub-user
-  repo-title: "Flathub"
