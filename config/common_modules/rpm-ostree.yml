@@ -42,8 +42,6 @@ install:
   - vim
   - nano
   - code
-  # Clipboard
-  - gpaste
   # Theming
   - yaru-theme
   - kvantum
