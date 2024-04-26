@@ -46,6 +46,12 @@ install:
   - yaru-theme
   - kvantum
   - sassc
+  # Extra
+  - adw-gtk3-theme
+  - heif-pixbuf-loader
+  - libheif-freeworld
+  - libheif-tools
+  - pipewire-codec-aptx
 remove:
   - firefox
   - firefox-langpacks
