@@ -20,7 +20,7 @@ system:
     - com.github.liferooter.textpieces
     - de.haeckerfelix.Fragments
     - app.drey.Dialect
-    - org.telegram.desktop
+    # - org.telegram.desktop
     - com.spotify.Client
     - com.github.rafostar.Clapper
     - com.github.neithern.g4music
