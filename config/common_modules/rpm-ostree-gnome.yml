@@ -13,7 +13,7 @@ install:
 remove:
   - gnome-terminal
   - gnome-terminal-nautilus
-  - gnome-software-rpm-ostree
+  # - gnome-software-rpm-ostree
   - gnome-tour
   - gnome-system-monitor
   # - gnome-shell-extension-apps-menu
