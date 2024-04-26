@@ -8,7 +8,6 @@ install:
   - gvfs-nfs
   - gvfs-archive
   - gnome-console
-  - gnome-shell-extension-pop-shell
   - gnome-shell-extension-system76-scheduler
   - gnome-shell-extension-appindicator
 remove:
@@ -16,7 +15,6 @@ remove:
   - gnome-terminal-nautilus
   - gnome-software-rpm-ostree
   - gnome-tour
-  - gnome-initial-setup
   - gnome-system-monitor
   - gnome-shell-extension-apps-menu
   - gnome-shell-extension-launch-new-instance
