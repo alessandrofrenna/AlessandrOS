@@ -23,6 +23,8 @@ system:
     - app.drey.Dialect
     - org.telegram.desktop
     - com.spotify.Client
+    - com.github.rafostar.Clapper
+    - com.github.neithern.g4music
     # Web browsers
     - io.github.ungoogled_software.ungoogled_chromium
     - org.mozilla.firefox
