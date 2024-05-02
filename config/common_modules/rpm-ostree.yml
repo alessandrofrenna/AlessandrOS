@@ -7,7 +7,7 @@ install:
   - fuse-common
   - fuse3-libs
   # Utilities
-  - neofetch
+  - fastfetch
   - btop
   - xorg-x11-server-Xwayland
   # - xwaylandvideobridge it's buggy
