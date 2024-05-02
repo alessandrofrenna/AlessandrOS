@@ -10,6 +10,8 @@ install:
   - fastfetch
   - btop
   - xorg-x11-server-Xwayland
+  - wofi
+  - kitty
   # - xwaylandvideobridge it's buggy
   - fprintd
   - python3-pip
