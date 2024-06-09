@@ -7,7 +7,7 @@ install:
   - gvfs-mtp
   - gvfs-nfs
   - gvfs-archive
-  - gnome-console
+  #  - gnome-console
   - gnome-shell-extension-system76-scheduler
   - gnome-shell-extension-appindicator
 remove:
