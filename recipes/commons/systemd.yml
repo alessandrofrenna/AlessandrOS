@@ -1,8 +1,8 @@
 type: systemd
 system:
   enabled:
+    # - com.system76.Scheduler.service
     - minimum-free-zram.service
-    - com.system76.Scheduler.service
     - tuned.service
   disabled:
     - rpm-ostreed-automatic.timer

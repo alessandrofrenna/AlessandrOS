@@ -1,0 +1,16 @@
+name: thanatos
+description: OSTree layer on top of ublue-silverblue-main
+
+base-image: ghcr.io/ublue-os/silverblue-main
+image-version: 40
+
+modules:
+  - from-file: commons/xdg-autostart-workaround.yml
+  - from-file: commons/files.yml
+  - from-file: commons/rpm-ostree.yml
+  - from-file: commons/rpm-ostree-gnome.yml
+  - from-file: commons/default-flatpaks.yml
+  - from-file: commons/scripts.yml
+  - from-file: commons/bling.yml
+  - from-file: commons/systemd.yml
+  - from-file: commons/signing.yml

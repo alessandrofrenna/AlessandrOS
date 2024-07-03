@@ -1,7 +1,7 @@
 type: script
 scripts:
+  # - system76-scheduler.sh
   - gnome-mutter-patched.sh
-  - system76-scheduler.sh
   - disable-cups.sh
   - block-ads.sh
   - reload-font-cache.sh
