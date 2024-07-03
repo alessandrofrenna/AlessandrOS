@@ -8,8 +8,8 @@ install:
   - gvfs-nfs
   - gvfs-archive
   - gnome-console
-  - gnome-shell-extension-system76-scheduler
   - gnome-shell-extension-appindicator
+  # - gnome-shell-extension-system76-scheduler
 remove:
   - gnome-terminal
   - gnome-terminal-nautilus
