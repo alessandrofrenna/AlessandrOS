@@ -1,0 +1,3 @@
+modules:
+  - from-file: gnome/00-gnome-packages.yml
+  - from-file: gnome/01-mutter-patch.yml
