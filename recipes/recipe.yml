@@ -5,6 +5,6 @@ base-image: ghcr.io/ublue-os/silverblue-main
 image-version: 40
 
 modules:
-  - from-file: commons/100-base.yml
   - from-file: rpm-ostree/101-rpm-ostree.yml
   - from-file: gnome/102-gnome-special.yml
+  - from-file: commons/100-base.yml
