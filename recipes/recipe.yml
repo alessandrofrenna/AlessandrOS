@@ -6,7 +6,7 @@ image-version: 40
 
 modules:
   - from-file: commons/100-base.yml
-  - from-file: rpm-ostree/101-rpm-os-tree.yml
-  - from-file: rpm-ostree/102-rpm-os-tree-gnome.yml
+  - from-file: rpm-ostree/101-rpm-ostree.yml
+  - from-file: rpm-ostree/102-rpm-ostree-gnome.yml
   - from-file: scripts/103-scripts.yml
   - from-file: scripts/104-scripts-mutter-patched.yml
