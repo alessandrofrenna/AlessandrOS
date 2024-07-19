@@ -2,4 +2,4 @@ type: rpm-ostree
 remove:
   - firefox
   - firefox-langpacks
-  - fedora-bookrmarks
+  - fedora-bookmarks
