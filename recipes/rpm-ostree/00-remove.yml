@@ -3,3 +3,4 @@ remove:
   - firefox
   - firefox-langpacks
   - fedora-bookmarks
+  - power-profiles-daemon
