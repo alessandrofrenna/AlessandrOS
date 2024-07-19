@@ -15,7 +15,6 @@ install:
   - strace
   - cmake
   - patch
-  - patch-utils
   - git
   - curl
   - wget
