@@ -1,5 +1,6 @@
 type: rpm-ostree
 install:
+  - bootc
   - langpacks-en
   - fuse3
   - fuse-common
