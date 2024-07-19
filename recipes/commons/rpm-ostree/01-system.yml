@@ -1,5 +1,6 @@
 type: rpm-ostree
 install:
+  - langpacks-en
   - fuse3
   - fuse-common
   - fuse3-libs
