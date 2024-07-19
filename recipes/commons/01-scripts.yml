@@ -1,5 +1,6 @@
 type: script
 scripts:
+  - update-bootloader.sh
   - xdg-autostart-workaround.sh
   - reload-font-cache.sh
   - disable-cups.sh
