@@ -1,0 +1,6 @@
+modules:
+  - from-file: commons/00-systemd.yml
+  - from-file: commons/01-files.yml
+  - from-file: commons/02-bling.yml
+
+  - type: signing

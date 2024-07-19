@@ -5,12 +5,8 @@ base-image: ghcr.io/ublue-os/silverblue-main
 image-version: 40
 
 modules:
-  - from-file: commons/xdg-autostart-workaround.yml
-  - from-file: commons/files.yml
-  - from-file: commons/rpm-ostree.yml
-  - from-file: commons/rpm-ostree-gnome.yml
-  - from-file: commons/default-flatpaks.yml
-  - from-file: commons/scripts.yml
-  - from-file: commons/bling.yml
-  - from-file: commons/systemd.yml
-  - from-file: commons/signing.yml
+  - from-file: commons/100-base.yml
+  - from-file: rpm-ostree/101-rpm-os-tree.yml
+  - from-file: rpm-ostree/102-rpm-os-tree-gnome.yml
+  - from-file: scripts/103-scripts.yml
+  - from-file: scripts/104-scripts-mutter-patched.yml

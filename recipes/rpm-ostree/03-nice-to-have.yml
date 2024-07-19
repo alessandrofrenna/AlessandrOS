@@ -1,0 +1,9 @@
+type: rpm-ostree
+install:
+  - kitty
+  - vim
+  - nano
+  - btop
+  - fastfetch
+  - wofi
+  - youtube-dl

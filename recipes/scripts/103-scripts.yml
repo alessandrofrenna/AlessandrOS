@@ -1,0 +1,8 @@
+type: script
+scripts:
+  - xdg-autostart-workaround.sh
+  - reload-font-cache.sh
+  - disable-cups.sh
+  - block-ads.sh
+  - chmod-minimum-free-zram.sh
+  - remove.sh

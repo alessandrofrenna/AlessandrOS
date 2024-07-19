@@ -1,8 +1,4 @@
 #!/usr/bin/env bash
-rpm-ostree uninstall htop || true
-rpm-ostree uninstall yelp|| true
-rpm-ostree uninstall gnome-extensions-app || true
-rpm-ostree uninstall neofetch || true
 
 # Tell build process to exit if there are any errors.
 set -oue pipefail

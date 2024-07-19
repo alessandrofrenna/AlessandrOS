@@ -1,7 +1,6 @@
 type: systemd
 system:
   enabled:
-    # - com.system76.Scheduler.service
     - minimum-free-zram.service
     - tuned.service
   disabled:
