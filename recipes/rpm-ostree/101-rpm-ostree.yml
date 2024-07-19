@@ -1,5 +1,0 @@
-modules:
-  - from-file: rpm-ostree/00-remove.yml
-  - from-file: rpm-ostree/01-system.yml
-  - from-file: rpm-ostree/02-dev-tools.yml
-  - from-file: rpm-ostree/03-nice-to-have.yml
