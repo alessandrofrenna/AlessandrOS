@@ -7,4 +7,3 @@ modules:
   - from-file: commons/01-scripts.yml
   - from-file: commons/02-systemd.yml
   - from-file: commons/03-bling.yml
-  - type: signing
