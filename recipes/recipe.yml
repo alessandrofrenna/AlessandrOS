@@ -6,5 +6,6 @@ image-version: 40
 
 modules:
   - from-file: commons/100-base.yml
-  - from-file: gnome/102-gnome-special.yml
+  - from-file: gnome/101-gnome-special.yml
+  - from-file: flatpaks/102-flatpaks.yml
   - type: signing

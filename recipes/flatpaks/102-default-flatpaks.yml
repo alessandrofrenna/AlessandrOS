@@ -1,0 +1,28 @@
+type: default-flatpaks
+notify: true
+system:
+  repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+  repo-name: flathub
+  repo-title: "Flathub (System)"
+  install:
+    # Internet
+    - io.github.ungoogled_software.ungoogled_chromium
+    - org.mozilla.firefox
+    - org.mozilla.Thunderbird
+    # Multimedia
+    - com.spotify.Client
+    - com.github.neithern.g4music
+    - com.github.rafostar.Clapper
+    - com.github.wwmm.easyeffects
+    - com.github.johnfactotum.Foliate
+    # Flatpaks(app, permisison)/AppImages/Distroboxes/Toolboxes tools
+    - com.github.tchx84.Flatseal
+    - io.github.flattool.Warehouse
+    - it.mijorus.gearlever
+    - io.github.dvlv.boxbuddyrs
+    - com.github.marhkb.Pods
+    # Others
+    - de.haeckerfelix.Fragments
+    - io.gitlab.adhami3310.Impression
+    - com.github.liferooter.textpieces
+  remove:

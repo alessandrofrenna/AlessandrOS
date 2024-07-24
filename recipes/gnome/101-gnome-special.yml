@@ -1,4 +1,4 @@
 modules:
   - from-file: gnome/00-gnome-packages.yml
   - from-file: gnome/01-mutter-patch.yml
-  - from-file: gnome/02-remove-flatpaks.yml
+  - from-file: gnome/02-flatpaks.yml
